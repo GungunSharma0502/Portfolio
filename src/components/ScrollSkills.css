@@ -1,0 +1,194 @@
+/* ScrollSkills Component Specific Styles */
+.scroll-skills-component {
+  position: relative;
+}
+
+/* Particles - Component Specific */
+.scroll-particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#scroll-particles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Star Animation */
+.scroll-star-animation {
+  width: 100px; 
+  height: 100px;
+  position: absolute; 
+  bottom: 100px; 
+  left: -40px;
+  z-index: 10;
+}
+
+/* Scroll Text Section */
+.scroll-scroll-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text-track {
+  white-space: nowrap;
+  font-size: 5rem;
+  padding-left: 5vw;
+}
+
+.scroll-scroll-text {
+  display: inline-block;
+  will-change: transform;
+  position: relative;
+}
+
+.scroll-word-box {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  margin-right: 0.5rem;
+}
+
+.highlight-word {
+  display: inline-block;
+  color: #eee;
+  will-change: transform, color;
+  position: relative;
+  padding: 0 0.2em;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+/* Skills Grid Section */
+.scroll-skills-section {
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-skills-section h1 {
+  margin-top: 120px;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.scroll-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flip Cards */
+.scroll-card {
+  perspective: 1000px;
+  min-height: 150px;
+}
+
+.scroll-card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.scroll-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 12px rgba(123, 60, 194, 0.5);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-front {
+  z-index: 2;
+  font-size: 1.5rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .scroll-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .scroll-text-track {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .scroll-skills-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  
+  .scroll-skills-section h1 {
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+  
+  .scroll-text-track {
+    font-size: 3rem;
+  }
+  
+  .scroll-star-animation {
+    width: 80px;
+    height: 80px;
+    left: -30px;
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .scroll-text-track {
+    font-size: 2.5rem;
+  }
+  
+  .card-front {
+    font-size: 1.3rem;
+  }
+  
+  .card-back {
+    font-size: 0.9rem;
+  }
+}
