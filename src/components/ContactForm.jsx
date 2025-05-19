@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ Import navigate
 import './ContactForm.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '' });
   const [message, setMessage] = useState({ text: '', type: '' });
+  const navigate = useNavigate(); // ✅ Initialize navigate
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,6 +15,12 @@ function ContactForm() {
     e.preventDefault();
     if (formData.name && formData.email) {
       setMessage({ text: 'Message sent successfully!', type: 'success' });
+
+      // Optional: Show success message briefly before redirect
+      setTimeout(() => {
+        navigate('/'); // ✅ Redirect to `/`
+      }, 1000);
+
       setFormData({ name: '', email: '' });
     } else {
       setMessage({ text: 'Please fill out all fields.', type: 'error' });

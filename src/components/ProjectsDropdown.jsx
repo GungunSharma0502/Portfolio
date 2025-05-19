@@ -15,7 +15,7 @@ const ProjectsDropdown = () => {
           <strong>Tech Stack:</strong> React, CSS, Node.js, Express, MySQL, GSAP<br /><br />
           Gungun Portfolio is a clean and expressive personal website that showcases both creativity and technical depth. It delivers a dynamic user experience with smooth transitions and interactive animations.<br /><br />
           <em>"This project reflects my passion for design and my full-stack capabilities, making me a strong fit for any tech-driven internship."</em><br /><br />
-          👉 <a href="#" target="_blank" style={styles.link}>Click here to visit the project</a>
+          👉 <a href="https://portfolio-gamma-red-21.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
       )
     },
@@ -25,7 +25,7 @@ const ProjectsDropdown = () => {
         <>
           KiddyPlanner is a colorful and simple to-do list app created especially for children. It encourages young users to manage their tasks with joy.<br /><br />
           <em>"It combines functionality with fun—ideal for developing productive habits in a playful environment."</em><br /><br />
-          👉 <a href="#" target="_blank" style={styles.link}>Click here to visit the project</a>
+          👉 <a href="https://kiddy-planner.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
       )
     },
@@ -35,7 +35,7 @@ const ProjectsDropdown = () => {
         <>
           Expense Tracker helps users manage their finances by tracking income, expenses, and savings all in one place. It's designed for clarity and ease of use.<br /><br />
           <em>"This project shows my ability to build practical, real-life tools with efficient logic and user-centered design."</em><br /><br />
-          👉 <a href="#" target="_blank" style={styles.link}>Click here to visit the project</a>
+          👉 <a href="https://expense-tracker-pi-dusky.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
       )
     },
@@ -45,7 +45,7 @@ const ProjectsDropdown = () => {
         <>
           A sleek and modern animated website built with my team to create a visually stunning and engaging experience.<br /><br />
           <em>"This work displays my UI/UX skills and collaborative development approach."</em><br /><br />
-          👉 <a href="#" target="_blank" style={styles.link}>Click here to visit the project</a>
+          👉 <a href="https://sunscriptservice.com " target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
       )
     },
@@ -55,7 +55,7 @@ const ProjectsDropdown = () => {
         <>
           WealthByVishal is a website built for a professional LIC agent to help users understand and explore insurance policies easily.<br /><br />
           <em>"An elegant client-focused site that converts visitors into trusted leads through intuitive interaction."</em><br /><br />
-          👉 <a href="#" target="_blank" style={styles.link}>Click here to visit the project</a>
+          👉 <a href="https://vishal-one.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
       )
     },
