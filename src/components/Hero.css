@@ -21,21 +21,7 @@
   position: absolute;
 }
 
-/* New Top Container */
-.toopp {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 900;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  /* backdrop-filter: blur(10px); */
-  /* background: rgba(0, 0, 0, 0.1); */
-}
+
 
 /* Top Right Button - Updated */
 .top-sign-up {
@@ -164,8 +150,8 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .toopp {
-    padding: 1.5rem;
+  .full-screen {
+    margin-top: 50px;
   }
 
   .btn-sign-up {
@@ -174,7 +160,7 @@ h1 {
   }
 
   h1 {
-    margin-top: 100px;
+   margin-top: 0;
     font-size: 3rem;
   }
 
