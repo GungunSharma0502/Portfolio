@@ -144,6 +144,13 @@
   line-height: 1.5;
   text-align: center;
 }
+.skills-subheading {
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00c8ff;
+}
+
 
 /* Responsive Design */
 @media (max-width: 900px) {

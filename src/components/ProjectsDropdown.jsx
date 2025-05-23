@@ -9,11 +9,11 @@ const ProjectsDropdown = () => {
 
   const projects = [
     {
-      title: "Gungun Portfolio",
+      title: "My Portfolio",
       content: (
         <>
           <strong>Tech Stack:</strong> React, CSS, Node.js, Express, MySQL, GSAP<br /><br />
-          Gungun Portfolio is a clean and expressive personal website that showcases both creativity and technical depth. It delivers a dynamic user experience with smooth transitions and interactive animations.<br /><br />
+          My Portfolio is a clean and expressive personal website that showcases both creativity and technical depth. It delivers a dynamic user experience with smooth transitions and interactive animations.<br /><br />
           <em>"This project reflects my passion for design and my full-stack capabilities, making me a strong fit for any tech-driven internship."</em><br /><br />
           👉 <a href="https://portfolio-gamma-red-21.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
@@ -65,7 +65,7 @@ const ProjectsDropdown = () => {
         <>
           SolveX is a complete AI-based social media management platform with content generation, automation, and analytics features.<br /><br />
           <em>"This project highlights my passion for SaaS and automation-driven solutions with modern design."</em><br /><br />
-          👉 <a href="#" target="_blank" style={styles.link}>Click here to visit the project</a>
+          👉 <a href="https://solve-x-gamma.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
         </>
       )
     }
@@ -131,6 +131,7 @@ const styles = {
     fontWeight: 800,
     color: '#fff',
     marginBottom: '1.2rem',
+      textAlign: 'center',
   },
   span: {
     fontSize: '2.5rem',

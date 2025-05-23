@@ -66,40 +66,28 @@ function Hero() {
         <div id="particles"></div>
       </div>
 
-      <div className="toopp">
-        <div className="top-sign-up">
-          <button className="btn-sign-up" onClick={() => navigate('/contact')}>
-            Contact Me! <span className="icon">↗</span>
-          </button>
-        </div>
-      </div>
+      
 
       <main>
-        <section className="main-content full-screen">
-          <div className="text-content">
-            <h1>
-              Hi I'm<br />
-              <span className="highlight">Gungun Sharma</span>
-            </h1>
-            <p className="description">
-              I'm a full-stack developer with a frontend-first mindset—<br />
-              passionate about crafting visually stunning, responsive, and user-focused web experiences that blend performance with design.
-            </p>
-            <div className="btn-group">
-              <button className="btn-get-started" onClick={() => navigate('/contact')}>
-                Contact Me <span className="icon">↗</span>
-              </button>
-              <button className="btn-get-started">
-                Hire Me <span className="icon">↗</span>
-              </button>
-            </div>
-          </div>
+  <section className="main-content full-screen centered">
+    <div className="text-content">
+      <h1>
+        Hi I'm<br />
+        <span className="highlight">Gungun Sharma</span>
+      </h1>
+      <p className="description">
+        A full-stack developer with a frontend-first mindset—<br />
+        passionate about crafting visually stunning, responsive, and user-focused web experiences that blend performance with design.
+      </p>
+      <div className="btn-group">
+        <button className="btn-get-started" onClick={() => navigate('/contact')}>
+          Connect With Me <span className="icon">↗</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
 
-          <div className="lottie-animation">
-            <Lottie options={defaultLottieOptions} />
-          </div>
-        </section>
-      </main>
     </div>
   );
 }

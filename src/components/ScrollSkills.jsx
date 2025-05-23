@@ -32,7 +32,6 @@ const ScrollSkills = () => {
     });
 
     const words = document.querySelectorAll('.highlight-word');
-
     words.forEach((word) => {
       const animDirection = word.dataset.anim || 'bottom';
       const customColor = word.dataset.color;
@@ -40,18 +39,10 @@ const ScrollSkills = () => {
         startY = 0;
 
       switch (animDirection) {
-        case 'left':
-          startX = -100;
-          break;
-        case 'right':
-          startX = 100;
-          break;
-        case 'top':
-          startY = -100;
-          break;
-        case 'bottom':
-          startY = 100;
-          break;
+        case 'left': startX = -100; break;
+        case 'right': startX = 100; break;
+        case 'top': startY = -100; break;
+        case 'bottom': startY = 100; break;
       }
 
       gsap.set(word, {
@@ -133,6 +124,20 @@ const ScrollSkills = () => {
     },
   };
 
+  const frontendSkills = [
+    ['HTML', 'Structure of web pages'],
+    ['CSS', 'Styling & Layouts'],
+    ['JavaScript', 'Interactive Logic'],
+    ['React', 'Component-based UI'],
+  ];
+
+  const backendSkills = [
+    ['Node.js', 'Server-side Logic'],
+    ['Express.js', 'Routing & APIs'],
+    ['MySQL', 'Database Management'],
+    ['Git & GitHub', 'Version Control'],
+  ];
+
   return (
     <>
       <div className="scroll-particles-container">
@@ -166,11 +171,7 @@ const ScrollSkills = () => {
               ['left', 'results.'],
             ].map(([anim, word, color], idx) => (
               <span className="scroll-word-box" key={idx}>
-                <span
-                  className="highlight-word"
-                  data-anim={anim}
-                  data-color={color}
-                >
+                <span className="highlight-word" data-anim={anim} data-color={color}>
                   {word}
                 </span>
               </span>
@@ -182,18 +183,23 @@ const ScrollSkills = () => {
       {/* SKILLS SECTION */}
       <section className="scroll-skills-section">
         <h1>My Skills</h1>
+
+        <h2 className="skills-subheading">Frontend Skills</h2>
         <div className="scroll-skills-grid">
-          {[
-            ['HTML', 'Structure of web pages'],
-            ['CSS', 'Styling & Layouts'],
-            ['JavaScript', 'Interactive Logic'],
-            ['React', 'Component-based UI'],
-            ['Node.js', 'Server-side Logic'],
-            ['Express.js', 'Routing & APIs'],
-            ['MySQL', 'Database Management'],
-            ['Git & GitHub', 'Version Control'],
-          ].map(([title, desc], idx) => (
-            <div className="scroll-card" key={idx}>
+          {frontendSkills.map(([title, desc], idx) => (
+            <div className="scroll-card" key={`frontend-${idx}`}>
+              <div className="card-inner">
+                <div className="card-front">{title}</div>
+                <div className="card-back">{desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="skills-subheading">Beginner-level backend skills</h2>
+        <div className="scroll-skills-grid">
+          {backendSkills.map(([title, desc], idx) => (
+            <div className="scroll-card" key={`backend-${idx}`}>
               <div className="card-inner">
                 <div className="card-front">{title}</div>
                 <div className="card-back">{desc}</div>
