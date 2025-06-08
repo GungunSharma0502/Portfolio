@@ -1,0 +1,24 @@
+.resume-section {
+  text-align: center;
+  padding: 40px;
+  background-color: transparent; /* Fixed typo */
+  border-radius: 16px; /* Removed quotes and comma */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Fixed syntax */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.resume-button {
+    margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}

@@ -7,6 +7,7 @@ import ScrollSkills from "./components/ScrollSkills";
 import ProjectsDropdown from "./components/ProjectsDropdown";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import ResumeSection from "./components/ResumeSection";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
               <Hero />
               <AboutMe />
               <ScrollSkills />
+              <ResumeSection/>
               <ProjectsDropdown />
+              
               <Footer />
             </div>
           }
