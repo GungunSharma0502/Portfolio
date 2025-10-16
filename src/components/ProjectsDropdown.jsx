@@ -60,15 +60,16 @@ const ProjectsDropdown = () => {
       )
     },
     {
-      title: "SolveX",
-      content: (
-        <>
-          SolveX is a complete AI-based social media management platform with content generation, automation, and analytics features.<br /><br />
-          <em>"This project highlights my passion for SaaS and automation-driven solutions with modern design."</em><br /><br />
-          👉 <a href="https://solve-x-gamma.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
-        </>
-      )
-    }
+  title: "CartCraft",
+  content: (
+    <>
+      CartCraft is an elegant React-based shopping application that offers dark mode, real-time product filtering, and a smooth, user-friendly shopping experience for online retail.<br /><br />
+      <em>"This project reflects my focus on creating responsive, visually appealing, and performance-optimized frontend applications."</em><br /><br />
+      👉 <a href="https://cartcraftt.vercel.app/" target="_blank" style={styles.link}>Click here to visit the project</a>
+    </>
+  )
+}
+
   ];
 
   return (

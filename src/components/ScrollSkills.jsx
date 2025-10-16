@@ -134,7 +134,7 @@ const ScrollSkills = () => {
   const backendSkills = [
     ['Node.js', 'Server-side Logic'],
     ['Express.js', 'Routing & APIs'],
-    ['MySQL', 'Database Management'],
+    ['Mongodb', 'Database'],
     ['Git & GitHub', 'Version Control'],
   ];
 
